@@ -1,0 +1,117 @@
+.tab-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+}
+
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50%;
+}
+
+.section-title {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 19.09px;
+  letter-spacing: 2px;
+  text-align: right;
+  color: #0381ff;
+  text-transform: uppercase;
+}
+
+.main-title {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: right;
+  padding: 0px;
+  margin: 0px;
+}
+
+.description {
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.8px;
+  text-align: right;
+  color: #0b172a;
+}
+
+.tab-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+.animation-icon,
+.page,
+.file-icons {
+  position: absolute;
+}
+
+.learn-more-button {
+  padding: 15px 24px;
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.87px;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 0.5px solid rgba(0, 0, 0, 0.16);
+  text-decoration: none;
+}
+
+.learn-more-button:hover {
+  background-color: #c8c8c8;
+}
+
+@media (max-width: 768px) {
+  .tab-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .tab-content {
+    width: 90%;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .main-title {
+    text-align: center;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .tab-images {
+    padding-top: 50px;
+    img {
+      width: 257.39px;
+    }
+  }
+  .animation-icon {
+    width: 150px !important;
+  }
+  .settings {
+    width: 30px !important;
+  }
+  .file-icons {
+    width: auto !important;
+  }
+}
