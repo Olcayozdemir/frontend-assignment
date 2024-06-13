@@ -3,6 +3,7 @@
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
+  min-height: 582px;
   overflow: hidden;
   background-color: white;
 }
